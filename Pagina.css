@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@100;200;300;400;500&display=swap');
+
+:root {
+    --verde: #0c443a;
+    --vegan: #12f1c8;
+    --limon: #25d1b2;
+    --degradado: #222;
+}
+
+* {
+    font-family: 'Georama', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+}
+
+*::selection {
+    background: var(--vegan);
+    color: white;
+}
+
+html {
+    font-size: 62.4%;
+    overflow-x: hidden;
+}
+
+body {
+    background: whitesmoke;
+}
+
+section {
+    min-height: 100vh;
+    padding: 0 9%;
+    padding-top: 7.5rem;
+    padding-bottom: 2rem;
+
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    border-radius: 5rem;
+    background: var(--degradado);
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    transition: all .3s linear;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.heading {
+    text-align: center;
+    background: var(--verde);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+
+}
+
+header .logo {
+    font-size: 2rem;
+    color: var(--vegan);
+}
+
+header .logo span {
+    color: var(--verde);
+}
+
+header .navbar a {
+    font-size: 1.8rem;
+    margin-left: 2rem;
+    color: var(--verde);
+}
+
+header .navbar a:hover {
+    color: var(--vegan);
+}
+
+header input {
+    display: none;
+}
+
+header label {
+    font-size: 3rem;
+    color: var(--vegan);
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.Inicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../Pagina_Web/img/Fondo.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.Inicio .image img {
+    width: 40vw;
+    animation: float 3s linear infinite;
+
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0rem);
+
+    }
+
+    50% {
+        transform: translateY(-3.5rem);
+    }
+}
+
+.Inicio .content h3 {
+    font-size: 5.5rem;
+    color: black;
+    text-transform: uppercase;
+}
+
+.Inicio .content h3 span {
+    color: var(--vegan);
+    text-transform: uppercase;
+}
+
+.Inicio .content p {
+    font-size: 1.7rem;
+    color: black;
+    padding: 1rem 0;
+}
+
+.Nosotros {
+    background: url(../Pagina_Web/img/Fondo2.png)no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.Nosotros .columna {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: center;
+
+}
+
+.Nosotros .columna .image {
+    flex: 1 1 40rem;
+}
+
+.Nosotros .columna .image img {
+    width: 100%;
+
+}
+
+.Nosotros .columna .content {
+    flex: 1 1 40rem;
+}
+
+.Nosotros .columna .content h3 {
+    font-size: 3rem;
+    color: rgb(20, 216, 190);
+
+}
+
+.Nosotros .columna .content p {
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    padding: 1rem 0;
+
+}
+
+.Productos .caja-contenedor{
+    align-items: center;
+    justify-content: center;
+}
+
+.Productos .caja-contenedor .caja{
+    flex: 1 1 28rem;
+    margin: 1rem;
+    padding: 1rem;
+    background: white;
+    border: .1rem solid rgba(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border-radius: 22.5rem;
+    text-align: center;
+    padding-bottom: 3rem;
+
+}
+
+.Productos .caja-contenedor .caja:nth-child(2),
+.Productos .caja-contenedor .caja:hover{
+    border: .2rem solid var(--limon);
+}
+
+.Productos .caja-contenedor .caja .titulo{
+    color:var(--verde);
+    font-size: 2.5rem;
+    padding-top: 1rem;
+
+}
+
+.Productos .caja-contenedor .caja .tipos{
+    font-size: 4rem;
+    color:var(--limon);
+    padding:1rem 0;
+}
+
+.Contactanos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 4rem;
+}
+
+.Contactanos .image {
+    flex: 1 1 40rem;
+
+}
+
+
+.Contactanos .image img {
+    width: 100%;
+    padding: 2rem;
+
+}
+
+.Contactanos form {
+    flex: 1 1 40rem;
+    padding: 2rem 3rem;
+    border: .1rem solid rgba(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    background: white;
+}
+
+.Contactanos .heading {
+    text-align: left;
+    padding: 0;
+    padding-bottom: 2rem;
+}
+
+.Contactanos form .inputcaja {
+    position: relative;
+}
+
+.Contactanos form .inputcaja input,
+.Contactanos form .inputcaja textarea {
+    width: 100%;
+    background: none;
+    color: #333;
+    margin: 1.5rem 0;
+    padding: .5rem 0;
+    font-size: 1.7rem;
+    border-bottom: .1rem solid rgba(0, 0, 0, .1);
+    text-transform: none;
+}
+
+.Contactanos form .inputcaja textarea {
+    resize: none;
+    height: 13rem;
+}
+
+.Contactanos form .inputcaja label {
+    position: absolute;
+    top: 1.7rem;
+    left: 0;
+    font-size: 1.7rem;
+    color: #666;
+    transition: .2s linear;
+}
+
+.Contactanos form .inputcaja input:focus~label,
+.Contactanos form .inputcaja input:valid~label,
+.Contactanos form .inputcaja textarea:focus~label,
+.Contactanos form .inputcaja textarea:valid~label {
+    top: -.5rem;
+    font-size: 1.5rem;
+    color: var(--limon);
+}
+
+@media(max-width:1200px) {
+    html {
+        font-size: 55%;
+
+    }
+}
+
+@media(max-width:768px) {
+    header label {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 1rem 2rem;
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+        transform-origin: top;
+        transform: scaleY(0);
+        opacity: 0;
+        transition: .2s linear;
+    }
+
+    header .navbar a {
+        display: block;
+        margin: 2rem 0;
+        font-size: 2rem;
+    }
+
+    header input:checked~.navbar {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+
+    header input:checked~label::before {
+        content: '\f00d';
+    }
+
+    .Inicio {
+        flex-flow: column-reverse;
+    }
+
+    .Inicio .image img {
+        width: 100%;
+    }
+
+    .Inicio .content h3 {
+        font-size: 3.6rem;
+
+    }
+
+    .Inicio .content p {
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width:450px) {
+    html {
+        font-size: 49%;
+
+    }
+}
+
+section .content {
+
+    color: rgb(47, 0, 255);
+    padding-top: 75px;
+
+}
+
+section .content {
+
+    color: rgb(7, 3, 24);
+    padding-top: 75px;
+
+}
